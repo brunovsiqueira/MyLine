@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/notification_icon"
+        title="Notificações" />
+    <tab
+        id="@+id/tab_line"
+        icon="@drawable/notification_icon"
+        title="Nearby" />
+    <tab
+        id="@+id/tab_notifications"
+        icon="@drawable/notification_icon"
+        title="Friends" />
+    <tab
+        id="@+id/tab_menu"
+        icon="@drawable/notification_icon"
+        title="Friends" />
+</tabs>
