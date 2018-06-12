@@ -7,17 +7,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ihc.unb.com.br.myline.R;
+
 /**
  * Created by Bruno on 11/06/2018.
  */
 
-public class EnterFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
     View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        return view;
     }
 }
