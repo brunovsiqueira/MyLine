@@ -12,3 +12,9 @@ MyLine/\.idea/runConfigurations\.xml
 MyLine/build\.gradle
 
 MyLine/gradle/wrapper/gradle-wrapper\.properties
+
+\.idea/misc\.xml
+
+\.idea/workspace\.xml
+
+MyLine/\.idea/copyright/profiles_settings\.xml
