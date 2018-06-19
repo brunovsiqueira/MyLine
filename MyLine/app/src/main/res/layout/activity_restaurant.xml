@@ -23,7 +23,7 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <com.synnapps.carouselview.CarouselView
+    <com.synnapps.carouselview.CarouselVxiew
         android:id="@+id/carouselView"
         android:layout_width="match_parent"
         android:layout_height="200dp"

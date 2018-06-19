@@ -8,6 +8,7 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
 import ihc.unb.com.br.myline.R;
+import ihc.unb.com.br.myline.myline.screens.container.notification.NotificationsFragment;
 import ihc.unb.com.br.myline.myline.screens.container.restaurant.RestaurantFragment;
 
 public class ContainerActivity extends AppCompatActivity {

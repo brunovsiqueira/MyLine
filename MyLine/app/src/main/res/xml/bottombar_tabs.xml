@@ -3,17 +3,17 @@
     <tab
         id="@+id/tab_home"
         icon="@drawable/notification_icon"
-        title="Notificações" />
+        title="Restaurantes" />
     <tab
         id="@+id/tab_line"
         icon="@drawable/notification_icon"
-        title="Nearby" />
+        title="Minha fila" />
     <tab
         id="@+id/tab_notifications"
         icon="@drawable/notification_icon"
-        title="Friends" />
+        title="Notificações" />
     <tab
         id="@+id/tab_menu"
         icon="@drawable/notification_icon"
-        title="Friends" />
+        title="Perfil" />
 </tabs>
