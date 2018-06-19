@@ -27,5 +27,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.roughike:bottom-bar:2.3.1'
     compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    compile 'com.synnapps:carouselview:0.1.4'
     testCompile 'junit:junit:4.12'
 }
