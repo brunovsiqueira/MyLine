@@ -43,6 +43,7 @@
         android:layout_marginTop="40dp">
 
         <TextView
+            android:id="@+id/restaurant_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -93,6 +94,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="8dp"
                 android:text="(61) 3468-3655"
+                android:autoLink="phone"
                 android:textSize="16sp" />
 
         </LinearLayout>

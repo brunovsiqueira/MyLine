@@ -17,7 +17,7 @@ public class ContainerActivity extends AppCompatActivity {
     private NotificationsFragment notificationsFragment;
     private MenuFragment menuFragment;
 
-    private BottomBar bottomBar;
+    public BottomBar bottomBar;
     private android.support.v4.app.FragmentManager fragmentManager;
 
     @Override
