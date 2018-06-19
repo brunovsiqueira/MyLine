@@ -1,7 +1,5 @@
-package ihc.unb.com.br.myline.screens.container;
+package ihc.unb.com.br.myline.myline.screens.container;
 
-import android.app.FragmentManager;
-import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,10 +8,11 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
 import ihc.unb.com.br.myline.R;
+import ihc.unb.com.br.myline.myline.screens.container.restaurant.RestaurantFragment;
 
 public class ContainerActivity extends AppCompatActivity {
 
-    private HomeFragment homeFragment;
+    private RestaurantFragment restaurantFragment;
     private MyLineFragment myLineFragment;
     private NotificationsFragment notificationsFragment;
     private MenuFragment menuFragment;
@@ -45,7 +44,7 @@ public class ContainerActivity extends AppCompatActivity {
 
     private void instantiateFragments() {
 
-        homeFragment = new HomeFragment();
+        restaurantFragment = new RestaurantFragment();
         myLineFragment = new MyLineFragment();
         notificationsFragment = new NotificationsFragment();
         menuFragment = new MenuFragment();
@@ -54,7 +53,7 @@ public class ContainerActivity extends AppCompatActivity {
 
     private void addFragments() {
         fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().add(R.id.fragment_container, homeFragment).commit();
+        fragmentManager.beginTransaction().add(R.id.fragment_container, restaurantFragment).commit();
         fragmentManager.beginTransaction().add(R.id.fragment_container, myLineFragment).commit();
         fragmentManager.beginTransaction().add(R.id.fragment_container, notificationsFragment).commit();
         fragmentManager.beginTransaction().add(R.id.fragment_container, menuFragment).commit();
@@ -67,19 +66,19 @@ public class ContainerActivity extends AppCompatActivity {
             switch (tabId) {
                 case R.id.tab_home:
                     //mTitle.setText(getResources().getString(R.string.napkins_toolbar_title));
-                    fragmentManager.beginTransaction().hide(menuFragment).hide(myLineFragment).hide(notificationsFragment).show(homeFragment).commit();
+                    fragmentManager.beginTransaction().hide(menuFragment).hide(myLineFragment).hide(notificationsFragment).show(restaurantFragment).commit();
 
                     break;
                 case R.id.tab_line:
-                    fragmentManager.beginTransaction().hide(menuFragment).hide(notificationsFragment).hide(homeFragment).show(myLineFragment).commit();
+                    fragmentManager.beginTransaction().hide(menuFragment).hide(notificationsFragment).hide(restaurantFragment).show(myLineFragment).commit();
 
                     break;
                 case R.id.tab_notifications:
-                    fragmentManager.beginTransaction().hide(menuFragment).hide(homeFragment).hide(myLineFragment).show(notificationsFragment).commit();
+                    fragmentManager.beginTransaction().hide(menuFragment).hide(restaurantFragment).hide(myLineFragment).show(notificationsFragment).commit();
 
                     break;
                 case R.id.tab_menu:
-                    fragmentManager.beginTransaction().hide(myLineFragment).hide(homeFragment).hide(notificationsFragment).show(menuFragment).commit();
+                    fragmentManager.beginTransaction().hide(myLineFragment).hide(restaurantFragment).hide(notificationsFragment).show(menuFragment).commit();
                     break;
             }
         }

@@ -1,4 +1,4 @@
-package ihc.unb.com.br.myline.screens.home;
+package ihc.unb.com.br.myline.myline.screens.container;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,16 +13,15 @@ import ihc.unb.com.br.myline.R;
  * Created by Bruno on 11/06/2018.
  */
 
-public class HomeFragment extends Fragment {
+public class NotificationsFragment extends Fragment {
 
     View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
+        view = inflater.inflate(R.layout.fragment_notifications, container, false);
 
         return view;
     }
