@@ -1,6 +1,7 @@
 package ihc.unb.com.br.myline.myline.screens.container.restaurant;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,7 +65,20 @@ public class RestaurantAdapter extends RecyclerView.Adapter {
             restaurantImage = (ImageView) itemView.findViewById(R.id.restaurant_image);
             restaurantName = (TextView) itemView.findViewById(R.id.restaurant_name);
             restaurantDescription = (TextView) itemView.findViewById(R.id.restaurant_description);
+
+            itemView.setOnClickListener(restaurantClickListener);
+
         }
+
+        View.OnClickListener restaurantClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, RestaurantItemActvity.class);
+                intent.putExtra("restaurant", restaurantList.get(getAdapterPosition()));
+                context.startActivity(intent);
+            }
+        };
+
     }
 
 }
