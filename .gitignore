@@ -18,3 +18,7 @@ MyLine/gradle/wrapper/gradle-wrapper\.properties
 \.idea/workspace\.xml
 
 MyLine/\.idea/copyright/profiles_settings\.xml
+
+MyLine/\.idea/caches/build_file_checksums\.ser
+
+MyLine/app/build\.gradle
