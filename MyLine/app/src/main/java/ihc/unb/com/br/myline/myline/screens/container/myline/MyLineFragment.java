@@ -8,6 +8,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import ihc.unb.com.br.myline.R;
 
@@ -36,6 +38,15 @@ public class MyLineFragment extends Fragment {
                 new Handler().postDelayed(new Runnable() {
                     @Override public void run() {
                         // Stop animation (This will be after 3 seconds)
+                        final TextView textViewToChange = (TextView) view.findViewById(R.id.restaurant_phone);
+                        textViewToChange.setText(
+                                "Pessoas na fila: 10");
+                        final TextView textViewToChange1 = (TextView) view.findViewById(R.id.restaurant_time);
+                        textViewToChange1.setText(
+                                "Minha posição na fila: 2");
+                        final TextView textViewToChange2 = (TextView) view.findViewById(R.id.restaurant_line);
+                        textViewToChange2.setText(
+                                "Tempo estimado de espera: 5 min");
                         swipeLayout.setRefreshing(false);
                     }
                 }, 2000); // Delay in millis
@@ -44,6 +55,16 @@ public class MyLineFragment extends Fragment {
 
         // Scheme colors for animation
         swipeLayout.setColorSchemeResources(R.color.colorAccent);
+
+        final Button button = (Button) view.findViewById(R.id.enter_line_button2);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                //TODO
+            }
+        });
 
         return view;
     }
