@@ -2,18 +2,14 @@
 <tabs>
     <tab
         id="@+id/tab_home"
-        icon="@drawable/notification_icon"
-        title="Restaurantes" />
+        icon="@drawable/home_icon" />
     <tab
         id="@+id/tab_line"
-        icon="@drawable/notification_icon"
-        title="Minha fila" />
+        icon="@drawable/myline_icon" />
     <tab
         id="@+id/tab_notifications"
-        icon="@drawable/notification_icon"
-        title="Notificações" />
+        icon="@drawable/notification_icon" />
     <tab
         id="@+id/tab_menu"
-        icon="@drawable/notification_icon"
-        title="Perfil" />
+        icon="@drawable/menu_icon" />
 </tabs>
