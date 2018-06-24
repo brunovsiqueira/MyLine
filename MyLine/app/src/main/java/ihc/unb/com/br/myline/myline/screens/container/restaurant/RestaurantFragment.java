@@ -49,11 +49,11 @@ public class RestaurantFragment extends Fragment {
 
     private void createDummyList() {
 
-        restaurantList.add(new Restaurant("Outback Iguatemi", "Restaurante de cozinha australiana, com grande variedade de pratos", 1));
-        restaurantList.add(new Restaurant("TAJ Bar", "Bar dançante de culinária tailandesa", 2));
-        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1));
-        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1));
-        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1));
+        restaurantList.add(new Restaurant("Outback Iguatemi", "Restaurante de cozinha australiana, com grande variedade de pratos", 1, "Iguatemi Shopping Lago norte - Loja 21"));
+        restaurantList.add(new Restaurant("TAJ Bar", "Bar dançante de culinária tailandesa", 2, "70297-400, St. de Clubes Esportivos Sul - Brasília, DF"));
+        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1, "St. de Clubes Esportivos Sul Trecho 2 - Asa Sul"));
+        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1, "St. de Clubes Esportivos Sul Trecho 2 - Asa Sul"));
+        restaurantList.add(new Restaurant("Outback Pier 21", "Restaurante de cozinha australiana, com grande variedade de pratos", 1, "St. de Clubes Esportivos Sul Trecho 2 - Asa Sul"));
 
     }
 

@@ -12,13 +12,12 @@
         android:background="@color/colorPrimary">
 
         <TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Restaurantes"
             android:layout_gravity="center"
-            android:id="@+id/toolbar_title"
-            android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:text="Restaurantes"
+            android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse" />
 
     </android.support.v7.widget.Toolbar>
 

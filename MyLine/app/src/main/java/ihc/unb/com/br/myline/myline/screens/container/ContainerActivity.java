@@ -8,6 +8,9 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
 import ihc.unb.com.br.myline.R;
+import ihc.unb.com.br.myline.myline.screens.container.menu.MenuFragment;
+import ihc.unb.com.br.myline.myline.screens.container.myline.MyLineFragment;
+import ihc.unb.com.br.myline.myline.screens.container.notification.NotificationsFragment;
 import ihc.unb.com.br.myline.myline.screens.container.restaurant.RestaurantFragment;
 
 public class ContainerActivity extends AppCompatActivity {
@@ -17,7 +20,7 @@ public class ContainerActivity extends AppCompatActivity {
     private NotificationsFragment notificationsFragment;
     private MenuFragment menuFragment;
 
-    private BottomBar bottomBar;
+    public BottomBar bottomBar;
     private android.support.v4.app.FragmentManager fragmentManager;
 
     @Override

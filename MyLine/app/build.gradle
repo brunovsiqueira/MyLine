@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "ihc.unb.com.br.myline"
         minSdkVersion 19
@@ -28,5 +28,7 @@ dependencies {
     compile 'com.roughike:bottom-bar:2.3.1'
     compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     compile 'com.synnapps:carouselview:0.1.4'
+    //compile 'com.github.f0ris.sweetalert:library:1.5.3'
+    //implementation 'com.github.Leogiroux:sweet-alert-dialog:'
     testCompile 'junit:junit:4.12'
 }

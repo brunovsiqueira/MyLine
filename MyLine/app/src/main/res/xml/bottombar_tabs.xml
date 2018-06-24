@@ -2,18 +2,14 @@
 <tabs>
     <tab
         id="@+id/tab_home"
-        icon="@drawable/notification_icon"
-        title="Notificações" />
+        icon="@drawable/home_icon" />
     <tab
         id="@+id/tab_line"
-        icon="@drawable/notification_icon"
-        title="Nearby" />
+        icon="@drawable/myline_icon" />
     <tab
         id="@+id/tab_notifications"
-        icon="@drawable/notification_icon"
-        title="Friends" />
+        icon="@drawable/notification_icon" />
     <tab
         id="@+id/tab_menu"
-        icon="@drawable/notification_icon"
-        title="Friends" />
+        icon="@drawable/menu_icon" />
 </tabs>
