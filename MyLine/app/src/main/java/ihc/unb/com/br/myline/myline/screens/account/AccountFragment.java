@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import ihc.unb.com.br.myline.R;
 import ihc.unb.com.br.myline.myline.screens.container.ContainerActivity;
@@ -33,6 +34,7 @@ public class AccountFragment extends AppCompatActivity {
         public void onClick(View view) {
 
             startActivity(new Intent(getApplicationContext(), ContainerActivity.class));
+            Toast.makeText(getApplicationContext(), "Cadastro efetuado com sucesso!", Toast.LENGTH_SHORT).show();
 
         }
     };
