@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".myline.screens.container.restaurant.RestaurantItemActvity"/>
         <activity android:name=".myline.screens.container.ContainerActivity"/>
+        <activity android:name=".myline.screens.account.AccountFragment"/>
     </application>
 
 </manifest>

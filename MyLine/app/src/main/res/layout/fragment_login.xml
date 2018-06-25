@@ -52,15 +52,34 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Login"/>
+            android:text="Login"
+            android:background="@color/colorPrimary"/>
 
-        <TextView android:id="@+id/link_signup"
-            android:layout_width="fill_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="Ainda não tem conta? Clique aqui"
-            android:gravity="center"
-            android:textSize="16dip"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Ainda não tem conta? "
+                android:gravity="center"
+                android:textSize="16dip" />
+
+            <TextView android:id="@+id/link_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Clique aqui"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:autoLink="all"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

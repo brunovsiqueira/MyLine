@@ -9,14 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import ihc.unb.com.br.myline.R;
+import ihc.unb.com.br.myline.myline.screens.account.AccountFragment;
 import ihc.unb.com.br.myline.myline.screens.container.ContainerActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private View view;
     private Button buttonLogin;
+    private TextView buttonSignup;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,8 +26,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_login);
 
         buttonLogin = (Button) findViewById(R.id.btn_login);
-
         buttonLogin.setOnClickListener(buttonClickListener);
+
+        buttonSignup = (TextView) findViewById(R.id.link_signup);
+        buttonSignup.setOnClickListener(signupClickListener);
     }
 
     View.OnClickListener buttonClickListener = new View.OnClickListener() {
@@ -36,4 +40,14 @@ public class LoginActivity extends AppCompatActivity {
 
         }
     };
+
+    View.OnClickListener signupClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            startActivity(new Intent(getApplicationContext(), AccountFragment.class));
+
+        }
+    };
+
 }
