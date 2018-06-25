@@ -21,17 +21,25 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <com.synnapps.carouselview.CarouselVxiew
+    <!--<com.synnapps.carouselview.CarouselVxiew-->
+        <!--android:id="@+id/carouselView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--app:fillColor="#FFFFFFFF"-->
+        <!--app:pageColor="#00000000"-->
+        <!--app:radius="6dp"-->
+        <!--app:slideInterval="3000"-->
+        <!--app:strokeColor="#FF777777"-->
+        <!--app:strokeWidth="1dp"-->
+        <!--android:layout_below="@id/toolbar"/>-->
+
+    <ImageView
         android:id="@+id/carouselView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:fillColor="#FFFFFFFF"
-        app:pageColor="#00000000"
-        app:radius="6dp"
-        app:slideInterval="3000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp"
-        android:layout_below="@id/toolbar"/>
+        android:src="@drawable/outback"
+        android:layout_below="@id/toolbar"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
         android:layout_width="match_parent"

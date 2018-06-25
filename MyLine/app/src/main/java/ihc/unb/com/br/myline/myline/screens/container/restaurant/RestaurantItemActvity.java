@@ -21,7 +21,9 @@ public class RestaurantItemActvity extends AppCompatActivity {
 
     private Restaurant restaurant;
 
-    private CarouselView carouselView;
+//    private CarouselView carouselView;
+    private ImageView carouselView;
+
     private TextView textName;
     private TextView textHour;
     private TextView textLocale;
@@ -39,14 +41,15 @@ public class RestaurantItemActvity extends AppCompatActivity {
 
         findViewItems();
 
-        carouselView.setPageCount(sampleImages.length);
-        carouselView.setImageListener(imageListener);
+//        carouselView.setPageCount(sampleImages.length);
+//        carouselView.setImageListener(imageListener);
 
     }
 
     private void findViewItems() {
 
-        carouselView = (CarouselView) findViewById(R.id.carouselView);
+//        carouselView = (CarouselView) findViewById(R.id.carouselView);
+        carouselView = (ImageView) findViewById(R.id.carouselView);
         textHour = (TextView) findViewById(R.id.restaurant_time);
         textLocale = (TextView) findViewById(R.id.restaurant_locale);
         textName = (TextView) findViewById(R.id.restaurant_name);
